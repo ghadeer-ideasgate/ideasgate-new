@@ -1,3 +1,69 @@
 extends ../layouts/default-layout.pug
 block content
-  h1 Hello World!
+  section#slider
+    section.slides
+      section.slides-nav
+        nav.slides-nav__nav
+          button.slides-nav__prev.js-prev السابق
+          button.slides-nav__next.js-next التالى
+      section.slide.is-active
+        .slide__content
+          figure.slide__figure
+            .slide__img(style='background-image: url(https://source.unsplash.com/nfTA8pdaq9A/2000x1100)')
+          header.slide__header
+            h2.slide__title
+              span.title-line
+                span نقدم أفكار ابداعية 
+              span.title-line
+                span تتخطى توقعاتكم
+      section.slide
+        .slide__content
+          figure.slide__figure
+            .slide__img(style='background-image: url(https://source.unsplash.com/okmtVMuBzkQ/2000x1100)')
+          header.slide__header
+            h2.slide__title
+              span.title-line
+                span نقدم أفكار ابداعية
+              span.title-line
+                span تتخطى توقعاتكم
+      section.slide
+        .slide__content
+          figure.slide__figure
+            .slide__img(style='background-image: url(https://source.unsplash.com/WuQME0I_oZA/2000x1100)')
+          header.slide__header
+            h2.slide__title
+              span.title-line
+                span نقدم أفكار ابداعية
+              span.title-line
+                span تتخطى توقعاتكم
+      section.slide
+        .slide__content
+          figure.slide__figure
+            .slide__img(style='background-image: url(https://source.unsplash.com/NsWcRlBT_74/2000x1100)')
+          header.slide__header
+            h2.slide__title
+              span.title-line
+                span نقدم أفكار ابداعية
+              span.title-line
+                span تتخطى توقعاتكم
+  // about section
+  section#about
+   .container-fluid
+    .row
+      .col-lg-6
+        .content 
+          h1 ايديز
+            span(style="color:#f0932b;padding-right:5px;") جيت
+          p شركة متخصصة لصناعة الأفكار الإبداعية تهدف لإبتكار الحلول والوسائل المتكاملة القادرة على الوصول بأعمالكم الى مستويات الاحترافية و التميز ، وتعني ايديز جيت بشكل خاص بتقديم حلول الانترنت المتكاملة 
+          h3 رسالتنا
+          p نشر ثقافة الإبداع والإبتكار في تأسيس المشاريع وتهيئة البيئة المناسبة لكافة التخصصات عن طريق أنظمة البرمجة و التصميم وتسويق المشاريع بإستخدام أدوات التواصل الاجتماعي.
+          a.more(href="#") المزيد
+      .col-lg-6(class="bg-image")
+  // clients section
+  setion#clients
+    .container
+      .row
+        .col-lg-3
+          .client-logo
+            img 
+        

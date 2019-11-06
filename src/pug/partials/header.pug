@@ -1,1 +1,26 @@
-header
+
+
+header#header
+  nav.navbar.navbar-expand-md.navbar-light.fixed-top
+    .container
+      a.navbar-brand(href='#')
+        img(src='assets/images/logo.png' alt='ideasgate logo' height='70')
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto.pr-3.snip1189
+          li.nav-item.active
+            a.nav-link(href='index.html')
+              | الرئيسية
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='about.html') من نحن 
+          li.nav-item
+            a.nav-link(href='services.html') خدماتنا 
+          li.nav-item
+            a.nav-link(href='portfolio.html') أعمالنا 
+          li.nav-item
+            a.nav-link(href='contact.html') أتصل بنا 
+        form.form-inline.my-2.my-lg-0(method='get' action='design-order.html')
+          button#contactForm.btn.my-2.my-sm-0.btn-red(type='submit')
+            | اطلب تصميمك
