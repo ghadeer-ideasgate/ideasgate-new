@@ -2,13 +2,12 @@
 
 header#header
   nav.navbar.navbar-expand-lg.navbar-light.fixed-top
-    .container
       a.navbar-brand(href='#')
         img(src='assets/images/logo.png' alt='ideasgate logo' height='70')
       button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
         span.navbar-toggler-icon
-      #navbarSupportedContent.collapse.navbar-collapse
-        ul.navbar-nav.ml-auto.pr-3.cl-effect-15
+      #navbarSupportedContent.collapse.navbar-collapse.overlay
+        ul.navbar-nav.ml-auto.pr-3.overlay-content.cl-effect-15
           li.nav-item.active
             a.nav-link(href='index.html')
               | الرئيسية

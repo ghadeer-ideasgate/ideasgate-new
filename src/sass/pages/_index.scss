@@ -774,9 +774,6 @@ $slide-custom-width:70%;
     filter: grayscale(0%);
     transition: height 1s 1.4s $ease-cb-2, filter 0.4s 0.1s ease;
     border-radius: 0 50% 0 50%; 
-    @media (min-width: $mq-med){
-      background-size:cover;
-    }
     .is-active &{
       height: 100%;
       opacity: 1;

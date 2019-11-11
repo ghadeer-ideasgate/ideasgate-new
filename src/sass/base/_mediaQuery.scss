@@ -9,4 +9,124 @@
 .slide__img {
     background-size: cover!important;
 }
+#services .icon-block {
+    margin-bottom: 30px;}
+    .overlay {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-y: hidden;
+        transition: 0.5s;
+        height: 100%;
+    }
+    navbar-light .navbar-toggler {
+        color: #f0932b;
+        border-color: #f0932b;
+        z-index: 20000;
+    }
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 90px;
+        
+    }
+    .navbar-light .navbar-toggler {
+        color: #f8f9fa;
+        border-color: #f0932b;
+        z-index: 5000;
+    }
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 30px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .rtl .ml-auto, [dir="rtl"] .ml-auto {
+        display: inline-grid;
+    }
+    #contactForm {
+        border: 1px solid #f0932b;
+        border-radius: 0;
+        color: #fff;
+        margin: 12px auto;
+        font-size: 25px;
+    }
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #f8f9fa;
+    }
+    .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+        color:$orange-color;
+    }
+}
+
+@media screen and (max-width:425px){
+    .slides-nav__nav {
+        position: relative;
+        right: 0;
+        display: block;
+        font-size: 1em;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        margin: 0 auto;
+        bottom: -40px;}
+        
+        .slides-nav {
+            height: auto;
+            bottom: 0;
+            width: 100%;
+            margin: 10px auto;
+        }
+       
+    .cbp-l-loadMore-button .cbp-l-loadMore-link, .cbp-l-loadMore-button .cbp-l-loadMore-button-link{
+        padding: 0;
+    }
+    #clients .clients-container {
+        padding: 50px 0;
+        text-align: center;
+    }
+    #contact-info .contact-title {
+        padding-right: 0;
+    }
+    .footer-logo {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .footer-top .footer-navigation {
+        margin: 10px 0;
+    }
+    .footer-top .newsletter {
+        padding: 20px 0 10px;
+        text-align: center;
+        margin: 30px 0 0;
+    }
+    .social-links ul {
+        margin: 20px 0;
+    }
+    .footer-top .footer-navigation.navbar .navbar-nav {
+        flex-direction: column;}
+        .rtl .navbar-nav .nav-item+.nav-item, [dir="rtl"] .navbar-nav .nav-item+.nav-item {
+            margin-right: 0;}
+            .rtl .navbar-nav .nav-item, [dir="rtl"] .navbar-nav .nav-item {
+                float: right;
+                text-align: center;}
 }

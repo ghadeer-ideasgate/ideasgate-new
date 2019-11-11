@@ -35,9 +35,9 @@
     bindEvents: function(){
       
       // Scrollwheel & trackpad
-      s.slides.on({
-        'DOMMouseScroll mousewheel' : SliceSlider.handleScroll
-      });
+      // s.slides.on({
+      //   'DOMMouseScroll mousewheel' : SliceSlider.handleScroll
+      // });
       // On click prev
       s.navPrev.on({
         'click' : SliceSlider.prevSlide
@@ -185,3 +185,9 @@
       displayTypeSpeed: 100,
   });
 })(jQuery, window, document);
+$(".navbar-toggler").on("click", function () {
+  $("#myNavbar").css("height", "100%");
+});
+$("#myNavbar a").on("click", function () {
+  $("#myNavbar").css("height", "0%");
+})
