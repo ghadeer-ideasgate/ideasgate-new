@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css?family=Tajawal&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -12290,7 +12291,7 @@ body {
   font-family: "Tajawal", sans-serif;
 }
 
-a {
+a:hover {
   text-decoration: none;
 }
 
@@ -12311,7 +12312,7 @@ a {
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
-  font-size: 60px;
+  font-size: 35px;
   font-style: normal;
   /* margin-left: 20px; */
 }
@@ -12424,6 +12425,24 @@ a {
   content: "\f11a";
 }
 
+.btn-orange {
+  width: 120px;
+  height: 48px;
+  background: #f0932b;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+  color: #000;
+  border-radius: 0 !important;
+}
+
 #header {
   position: relative;
 }
@@ -12435,6 +12454,255 @@ a {
 
 .fixed-top {
   position: absolute;
+}
+
+.cl-effect-15 li a {
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  text-shadow: none;
+}
+
+.cl-effect-15 li a::before {
+  color: #fff;
+  content: attr(data-hover);
+  position: absolute;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+}
+
+.cl-effect-15 li a:hover::before,
+.cl-effect-15 li a:focus::before {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+#contactForm {
+  border: 1px solid #111111;
+  border-radius: 0;
+}
+
+#contactForm:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+footer {
+  padding: 60px 0 0 0;
+  background: #0b0e19;
+}
+
+.footer-top {
+  width: 100%;
+}
+
+.footer-top .footer-navigation {
+  height: 100%;
+}
+
+.footer-top .footer-navigation.navbar .navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 0;
+}
+
+.footer-top .footer-navigation.navbar .navbar-nav.nav-item {
+  float: right;
+}
+
+.footer-top .nav-link {
+  color: #fff;
+  -webkit-transition: color 5ms ease-in-out;
+  -o-transition: color 5ms ease-in-out;
+  transition: color 5ms ease-in-out;
+}
+
+.footer-top .nav-link:hover {
+  color: #f0932b;
+}
+
+.footer-top .newsletter {
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+.footer-top .newsletter .newsletter-title {
+  color: #f0932b;
+  padding: 10px 0;
+}
+
+.social-links ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-links ul li {
+  position: relative;
+  list-style: none;
+  margin: 0 2px;
+}
+
+.social-links ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 40px;
+  height: 8px;
+  background: #000;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.social-links ul li:hover::before {
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  opacity: 0.2;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.social-links ul li a {
+  width: 40px;
+  height: 40px;
+  display: block;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.social-links ul li:hover a {
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.social-links ul li a span {
+  width: 100%;
+  height: 100%;
+}
+
+.social-links ul li a span::before {
+  font-family: fontAwesome;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: #262626;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.social-links ul li:hover a span::before {
+  -webkit-transform: rotateX(90deg) translateY(-50%);
+  transform: rotateX(90deg) translateY(-50%);
+}
+
+.social-links ul li a span::after {
+  font-family: fontAwesome;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: rotateX(90deg) translateY(50%);
+  transform: rotateX(90deg) translateY(50%);
+}
+
+.social-links ul li:hover a span::after {
+  -webkit-transform: rotateX(0deg) translateY(0);
+  transform: rotateX(0deg) translateY(0);
+}
+
+.social-links ul li:nth-child(1) a span::before,
+.social-links ul li:nth-child(1) a span::after {
+  content: '\f09a';
+}
+
+.social-links ul li:nth-child(2) a span::before,
+.social-links ul li:nth-child(2) a span::after {
+  content: '\f099';
+}
+
+.social-links ul li:nth-child(3) a span::before,
+.social-links ul li:nth-child(3) a span::after {
+  content: '\f16d';
+}
+
+.social-links ul li:nth-child(1) a span::after {
+  background: #3b5999;
+  color: #fff;
+}
+
+.social-links ul li:nth-child(2) a span::after {
+  background: #55acce;
+  color: #fff;
+}
+
+.social-links ul li:nth-child(3) a span::after {
+  background: #F56040;
+  color: #fff;
+}
+
+.footer-bottom {
+  padding: 20px 0 0 0;
+}
+
+.footer-bottom .copyright p {
+  color: #fff;
+}
+
+.footer-bottom .copyright p span {
+  color: #f0932b;
 }
 
 .app {
@@ -13003,6 +13271,12 @@ body {
   border-radius: 0 50% 0 50%;
 }
 
+@media (min-width: 54em) {
+  .slide__img {
+    background-size: cover;
+  }
+}
+
 .is-active .slide__img {
   height: 100%;
   opacity: 1;
@@ -13026,7 +13300,7 @@ body {
   height: 100vh;
   background-size: cover;
   content: "";
-  background: url(../../../assets/images/06_STILL_LIFE_265_V3_Master_OP2.jpg);
+  background: url(/assets/images/06_STILL_LIFE_265_V3_Master_OP2.jpg);
   opacity: 0.2;
   top: 0;
   left: 0;
@@ -13067,6 +13341,14 @@ body {
   color: #000;
 }
 
+#services {
+  padding: 0px 0 120px 0;
+}
+
+#services [class^="flaticon-"]:before, #services [class*=" flaticon-"]:before, #services [class^="flaticon-"]:after, #services [class*=" flaticon-"]:after {
+  font-size: 60px;
+}
+
 .service {
   background: #000;
   text-align: center;
@@ -13089,6 +13371,148 @@ body {
 }
 
 #clients {
-  padding: 120px 0;
-  background: #ededed;
+  padding: 90px 0;
+}
+
+#clients .bg-image::after {
+  height: 100vh;
+  background-size: contain;
+  content: "";
+  background: url(/assets/images/06_STILL_LIFE_265_V3_Master_OP2.jpg);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-position: 50%;
+  border-radius: 50% 0;
+}
+
+#clients .clients-container {
+  padding: 50px;
+}
+
+#clients .clients-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#clients .clients-title h1 {
+  font-size: 3rem;
+}
+
+#services .icon-block {
+  color: #000;
+  padding: 60px 20px;
+  -webkit-box-shadow: 0 3px 15px #4c4c4d26;
+  box-shadow: 0 3px 15px #4c4c4d26;
+  background-color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#services .icon-block .whyicon i {
+  color: #f0932b;
+}
+
+#portfolio {
+  padding: 90px 0 60px 0;
+  background: #000;
+  background-image: url(/assets/images/portfolio_bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#portfolio .cbp-l-filters-text-sort, #portfolio .cbp-l-filters-text .cbp-filter-item, #portfolio .cbp-l-loadMore-button .cbp-l-loadMore-link, #portfolio .cbp-l-loadMore-button .cbp-l-loadMore-button-link {
+  font-family: "Tajawal", sans-serif;
+  font-size: 16px;
+}
+
+#portfolio .cbp-l-loadMore-button .cbp-l-loadMore-link, #portfolio .cbp-l-loadMore-button .cbp-l-loadMore-button-link {
+  width: 138px;
+  font: inherit;
+  outline: 0;
+  margin-top: 40px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+  border: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+#portfolio .cbp-l-grid-agency-desc {
+  font: inherit;
+  color: #f0932b;
+  text-align: center;
+  font-size: 14px;
+}
+
+#portfolio .cbp-l-grid-agency-title {
+  margin-top: 18px;
+  font: 700 17px/24px "Tajawal", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+#portfolio .cbp-l-filters-text-sort {
+  color: #fff;
+}
+
+#portfolio .cbp-l-filters-text .cbp-filter-item.cbp-filter-item-active {
+  color: #f0932b;
+}
+
+#portfolio .cbp-l-filters-text .cbp-filter-item {
+  color: #fbfbfb;
+}
+
+#contact-info {
+  padding: 60px 0 60px 0;
+}
+
+#contact-info .contact-info.icon-block {
+  padding: 0 7%;
+  min-height: 110px;
+}
+
+#contact-info span.icon {
+  float: right;
+  margin-left: 20px;
+  min-height: 65px;
+}
+
+#contact-info .contact-title {
+  margin: 0px 0 50px;
+  padding-right: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .slide__content {
+    position: relative;
+    margin: 0 auto;
+    height: 90%;
+    width: 85%;
+    top: 6.5%;
+  }
+  .slide__img {
+    background-size: cover !important;
+  }
 }

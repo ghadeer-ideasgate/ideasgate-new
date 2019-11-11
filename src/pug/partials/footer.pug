@@ -1,1 +1,57 @@
+
 footer
+    .container
+        .footer-top
+            .row
+                .col-lg-3
+                    .footer-logo
+                        img(src='/assets/images/logo.png',class="img-fluid logo-img",alt="Ideas gate-logo")
+                        
+                .col-lg-6
+                    .footer-navigation.navbar
+                        ul.navbar-nav.navbar-light
+                            li.nav-item.active
+                                a.nav-link(href='index.html') الرئيسية
+                                span.sr-only (current)
+                            li.nav-item
+                                a.nav-link(href='about.html') من نحن 
+                            li.nav-item
+                                a.nav-link(href='services.html') خدماتنا 
+                            li.nav-item
+                                a.nav-link(href='portfolio.html') أعمالنا 
+                            li.nav-item
+                                a.nav-link(href='contact.html') أتصل بنا 
+                .col-lg-3
+                    .social-links
+                        ul
+                            li
+                                a(href='https://www.facebook.com/Ideasgate')
+                                    span
+                            li
+                                a(href='https://twitter.com/Ideasgate')
+                                    span
+                            li
+                                a(href='https://www.instagram.com/ideasgate_/')
+                                    span
+            .row(class=".justify-content-*-center")
+                .col-lg-12
+                    .newsletter
+                        .newsletter-block
+                            h4.newsletter-title.text-center  اشترك ليصلك كل جديد لدينا
+                            .subscribe-form
+                                form.subscribe-mail(action='#' method='get' novalidate='true')
+                                    .form-group.col-lg-6.mx-auto
+                                        input.form-control.email-input.mb-3(type='email' placeholder='البريد الإلكترونى' name='EMAIL')
+                                        button.btn.btn-subscribe.text-center.btn-orange(type='submit')
+                                            | اشترك
+                                    p.error-message
+                                    p.sucess-message
+
+                
+        .footer-bottom
+            .row.text-center   
+                .col-lg-12
+                    .copyright
+                        p  
+                            span(class="pr-2") ايديزجيت
+                            | 2019 © جميع الحقوق محفوظة.

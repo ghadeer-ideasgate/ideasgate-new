@@ -5,8 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>ايديزجيت</title>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" sizes="32x32" href="/assets/favicon-32x32.png" type="image/png">
+    <link rel="icon" sizes="16x16" href="/assets/favicon-16x16.png" type="image/png">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="assets/site.webmanifest">
     <!-- Styles-->
-    <link href="./assets/css/styles.css" rel="stylesheet">
+    <!--portfolio css-->
+    <link rel="stylesheet" href="/assets/css/cubeportfolio.min.css">
+    <link href="./assets/css/styles.min.css" rel="stylesheet">
   </head>
   <body class="rtl">
     <div class="app">
@@ -30,16 +38,17 @@
       </div>
       <div class="bg-shape"></div>
       <header id="header">
-        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <div class="container"><a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="ideasgate logo" height="70"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto pr-3 snip1189">
-                <li class="nav-item active"><a class="nav-link" href="index.html">الرئيسية<span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">من نحن </a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">خدماتنا </a></li>
-                <li class="nav-item"><a class="nav-link" href="portfolio.html">أعمالنا </a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">أتصل بنا </a></li>
+              <ul class="navbar-nav ml-auto pr-3 cl-effect-15">
+                <li class="nav-item active"><a class="nav-link" href="index.html">الرئيسية<span class="sr-only">(current)</span></a>
+                  <li class="nav-item"><a class="nav-link" href="about.html">من نحن </a></li>
+                  <li class="nav-item"><a class="nav-link" href="services.html">خدماتنا </a></li>
+                  <li class="nav-item"><a class="nav-link" href="portfolio.html">أعمالنا </a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">أتصل بنا </a></li>
+                </li>
               </ul>
               <form class="form-inline my-2 my-lg-0" method="get" action="design-order.html">
                 <button class="btn my-2 my-sm-0 btn-red" id="contactForm" type="submit">اطلب تصميمك</button>
@@ -107,28 +116,239 @@
                 <h1>ايديز<span style="color:#f0932b;padding-right:5px;">جيت</span></h1>
                 <p>شركة متخصصة لصناعة الأفكار الإبداعية تهدف لإبتكار الحلول والوسائل المتكاملة القادرة على الوصول بأعمالكم الى مستويات الاحترافية و التميز ، وتعني ايديز جيت بشكل خاص بتقديم حلول الانترنت المتكاملة </p>
                 <h3>رسالتنا</h3>
-                <p>نشر ثقافة الإبداع والإبتكار في تأسيس المشاريع وتهيئة البيئة المناسبة لكافة التخصصات عن طريق أنظمة البرمجة و التصميم وتسويق المشاريع بإستخدام أدوات التواصل الاجتماعي.</p><a class="more" href="#">المزيد</a>
+                <p>نشر ثقافة الإبداع والإبتكار في تأسيس المشاريع وتهيئة البيئة المناسبة لكافة التخصصات عن طريق أنظمة البرمجة و التصميم وتسويق المشاريع بإستخدام أدوات التواصل الاجتماعي.</p><a class="btn-orange" href="#">المزيد</a>
               </div>
             </div>
             <div class="col-lg-6 bg-image"></div>
           </div>
         </div>
       </section>
-      <!-- clients section-->
-      <setion id="clients">
+      <!--services section-->
+      <section id="services">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3">
-              <div class="client-logo"><img></div>
+            <div class="col-lg-4 text-center"><a href="services.html">
+                <div class="icon-block">
+                  <div class="whyicon"><i class="flaticon-theme"></i></div>
+                  <h3>تصميم المواقع</h3>
+                </div></a></div>
+            <div class="col-lg-4 text-center"><a href="services.html">
+                <div class="icon-block">
+                  <div class="whyicon"><i class="flaticon-graphic-design"></i></div>
+                  <h3>جرافيك</h3>
+                </div></a></div>
+            <div class="col-lg-4 text-center"><a href="services.html">
+                <div class="icon-block">
+                  <div class="whyicon"><i class="flaticon-banner"></i></div>
+                  <h3>تسويق</h3>
+                </div></a></div>
+          </div>
+        </div>
+      </section>
+      <!--portfolio section-->
+      <section id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="cbp-l-filters-text" id="js-filters-agency">
+                <div class="cbp-l-filters-text-sort">ترتيب بواسطة:</div>
+                <div class="cbp-filter-item-active cbp-filter-item" data-filter="*">الكل
+                  <div class="cbp-filter-counter"></div>
+                </div> |
+                <div class="cbp-filter-item" data-filter=".web-design">تصميم مواقع 
+                  <div class="cbp-filter-counter"></div>
+                </div> |
+                <div class="cbp-filter-item" data-filter=".graphic">جرافيك
+                  <div class="cbp-filter-counter"></div>
+                </div> |
+                <div class="cbp-filter-item" data-filter=".marketing">تسويق إلكترونى 
+                  <div class="cbp-filter-counter"></div>
+                </div>
+              </div>
+              <div class="cbp cbp-l-grid-agency" id="js-grid-agency">
+                <div class="cbp-item graphic web-design"><a href="#" target="_blank">
+                    <div class="cbp-caption">
+                      <div class="cbp-caption-defaultWrap"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="/assets/images/portfolio/website-1.jpg" alt="" width="380" height="250"></div>
+                    </div>
+                    <div class="cbp-l-grid-agency-title">Beyazc</div>
+                    <div class="cbp-l-grid-agency-desc">تصميم مواقع / جرافيك</div></a></div>
+                <div class="cbp-item web-design marketing"><a href="#" target="_blank">
+                    <div class="cbp-caption">
+                      <div class="cbp-caption-defaultWrap"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="http://scriptpie.com/cubeportfolio/img/?i=380x250/b611ec" alt="" width="380" height="250"></div>
+                    </div>
+                    <div class="cbp-l-grid-agency-title">World Clock Widget</div>
+                    <div class="cbp-l-grid-agency-desc">تسويق إلكترونى / تصميم مواقع</div></a></div>
+                <div class="cbp-item graphic marketing"><a href="#" target="_blank">
+                    <div class="cbp-caption">
+                      <div class="cbp-caption-defaultWrap"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="http://scriptpie.com/cubeportfolio/img/?i=380x250/494bfe" alt="" width="380" height="250"></div>
+                    </div>
+                    <div class="cbp-l-grid-agency-title">To-Do Dashboard</div>
+                    <div class="cbp-l-grid-agency-desc">جرافيك / تسويق إلكترونى</div></a></div>
+                <div class="cbp-item web-design graphic"><a href="#" target="_blank">
+                    <div class="cbp-caption">
+                      <div class="cbp-caption-defaultWrap"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="http://scriptpie.com/cubeportfolio/img/?i=380x250/35fadd" alt="" width="380" height="250"></div>
+                    </div>
+                    <div class="cbp-l-grid-agency-title">Events and More</div>
+                    <div class="cbp-l-grid-agency-desc">تصميم مواقع / جرافيك</div></a></div>
+                <div class="cbp-item graphic marketing"><a href="#" target="_blank">
+                    <div class="cbp-caption">
+                      <div class="cbp-caption-defaultWrap"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="http://scriptpie.com/cubeportfolio/img/?i=380x250/b08497" alt="" width="380" height="250"></div>
+                    </div>
+                    <div class="cbp-l-grid-agency-title">Seemple* Music for iPad</div>
+                    <div class="cbp-l-grid-agency-desc">جرافيك / تسويق إلكترونى</div></a></div>
+                <div class="cbp-item graphic"><a href="#" target="_blank">
+                    <div class="cbp-caption">
+                      <div class="cbp-caption-defaultWrap"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="http://scriptpie.com/cubeportfolio/img/?i=380x250/0cf7a7" alt="" width="380" height="250"></div>
+                    </div>
+                    <div class="cbp-l-grid-agency-title">Remind~Me More</div>
+                    <div class="cbp-l-grid-agency-desc">  جرافيك</div></a></div>
+              </div>
+              <div class="cbp-l-loadMore-button" id="js-loadMore-agency"><a class="cbp-l-loadMore-link" href="#" rel="nofollow"><span class="cbp-l-loadMore-defaultText btn-orange">عرض المزيد</span><span class="cbp-l-loadMore-loadingText">جار التحميل...</span><span class="cbp-l-loadMore-noMoreLoading">لا يوجد اعمال أخرى</span></a></div>
             </div>
           </div>
         </div>
-      </setion>
-      <footer></footer>
+      </section>
+      <!-- clients section-->
+      <section id="clients">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 bg-image">
+              <div class="clients-title">
+                <h1>شركاء<span style="color:#f0932b;padding-right:5px;"> النجاح</span></h1>
+              </div>
+            </div>
+            <div class="clients-container col-lg-6">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="client-logo"><img src="/assets/images/clients/client-1.png"></div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="client-logo"><img src="/assets/images/clients/client-2.png"></div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="client-logo"><img src="/assets/images/clients/client-3.png"></div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="client-logo"><img src="/assets/images/clients/client-4.png"></div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="client-logo"><img src="/assets/images/clients/client-1.png"></div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="client-logo"><img src="/assets/images/clients/client-2.png"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact us-->
+      <section id="contact">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6">
+              <div id="contact-info">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="contact-info icon-block">
+                      <div class="contact-title">
+                        <h1>تواصل<span style="color:#f0932b;padding-right:5px;"> معنا</span></h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="contact-info icon-block"><span class="icon"><i class="flaticon-location"></i></span>
+                      <h5>العنوان</h5>
+                      <p>لوران الإسكندرية - 711 ش الحرية</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="contact-info icon-block"><span class="icon"><i class="flaticon-email"></i></span>
+                      <h5>البريد الإلكترونى</h5>
+                      <p style="font-size:17px;">info@ideasgate.com</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="contact-info icon-block"><span class="icon"><i class="flaticon-phone" aria-hidden="true"></i></span>
+                      <h5>تليفون</h5>
+                      <p style="direction:ltr">(+20) 155 016 4774 - <br> (03) 5702005 - (03) 5703003</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d852.7699058785577!2d29.9753506291858!3d31.24621904541377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5dacd1b51ba33%3A0x5bc38ee1ddb44c5c!2z2YXYtdix2YEg2KPYqNmIINi42KjZiiDYp9mE2KXYs9mE2KfZhdmKIEFESUI!5e0!3m2!1sen!2seg!4v1571223944314!5m2!1sen!2seg" height="400" width="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="footer-top">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="footer-logo"><img class="img-fluid logo-img" src="/assets/images/logo.png" alt="Ideas gate-logo"></div>
+              </div>
+              <div class="col-lg-6">
+                <div class="footer-navigation navbar">
+                  <ul class="navbar-nav navbar-light">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">الرئيسية</a><span class="sr-only">(current)</span></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">من نحن </a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">خدماتنا </a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">أعمالنا </a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">أتصل بنا </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="social-links">
+                  <ul>
+                    <li><a href="https://www.facebook.com/Ideasgate"><span></span></a></li>
+                    <li><a href="https://twitter.com/Ideasgate"><span></span></a></li>
+                    <li><a href="https://www.instagram.com/ideasgate_/"><span></span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row .justify-content-*-center">
+              <div class="col-lg-12">
+                <div class="newsletter">
+                  <div class="newsletter-block">
+                    <h4 class="newsletter-title text-center"> اشترك ليصلك كل جديد لدينا</h4>
+                    <div class="subscribe-form">
+                      <form class="subscribe-mail" action="#" method="get" novalidate="true">
+                        <div class="form-group col-lg-6 mx-auto">
+                          <input class="form-control email-input mb-3" type="email" placeholder="البريد الإلكترونى" name="EMAIL">
+                          <button class="btn btn-subscribe text-center btn-orange" type="submit">اشترك</button>
+                        </div>
+                        <p class="error-message"></p>
+                        <p class="sucess-message"></p>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="row text-center">  
+              <div class="col-lg-12">
+                <div class="copyright">
+                  <p> <span class="pr-2">ايديزجيت</span>2019 © جميع الحقوق محفوظة.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <!-- Scripts-->
     <script src="../../../node_modules/jquery/dist/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="../../../node_modules/bootstrap-v4-rtl/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.cubeportfolio.min.js"></script>
     <script src="./assets/js/scripts.min.js"></script>
   </body>
 </html>

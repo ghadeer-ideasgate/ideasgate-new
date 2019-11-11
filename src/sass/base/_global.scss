@@ -4,7 +4,7 @@ body{
   padding: 0;
   font-family:$font;
   }
-a{
+a:hover{
   text-decoration: none;
 }
   @font-face {
@@ -24,7 +24,7 @@ a{
   
   [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
     font-family: Flaticon;
-    font-size: 60px;
+    font-size:35px;
     font-style: normal;
   
     /* margin-left: 20px; */
@@ -136,4 +136,22 @@ a{
   
   .flaticon-loupe:before {
     content: "\f11a";
+  }
+
+  .btn-orange{
+    width: 120px;
+    height: 48px;
+    background: #f0932b;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 600;
+    color: #000;
+    border-radius: 0 !important;
   }

@@ -1,7 +1,7 @@
 {
-  "name": "pug-sass-starter",
+  "name": "ideasgate",
   "version": "1.0.0",
-  "description": "A simple starter for building HTML templates with Pug and Sass.",
+  "description": "ideasgate website",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",

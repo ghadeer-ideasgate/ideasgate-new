@@ -1,3 +1,6 @@
 @mixin customPadding($x) {
     padding: $x 0;
 }
+@mixin customPaddingXY($t,$l,$b,$r){
+    padding:$t $l $b $r;
+}

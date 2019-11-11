@@ -16,4 +16,32 @@
 }
 }
 .fixed-top {
-    position: absolute;}
+    position: absolute;
+}
+
+.cl-effect-15 li a {
+        color: rgba(0,0,0,0.2);
+        font-weight: 700;
+        text-shadow: none;
+    }
+    
+.cl-effect-15 li a::before {
+        color: #fff;
+        content: attr(data-hover);
+        position: absolute;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+    
+.cl-effect-15 li a:hover::before,
+.cl-effect-15 li a:focus::before {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    #contactForm {
+        border: 1px solid #111111;
+        border-radius: 0;
+        &:hover{
+            border: 1px solid #fff;
+            color:#fff;
+        }
+    }

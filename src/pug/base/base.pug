@@ -5,13 +5,23 @@ html(lang="ar")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
     title ايديزجيت
+    //Favicon
+    link(rel="apple-touch-icon", href="/assets/apple-touch-icon.png",sizes="180x180")
+    link(rel="icon", sizes="32x32" ,href="/assets/favicon-32x32.png" ,type="image/png")
+    link(rel="icon", sizes="16x16" ,href="/assets/favicon-16x16.png" ,type="image/png")
+    link(rel="shortcut icon", href="/assets/favicon.ico", type="image/x-icon")
+    link(rel="manifest", href="assets/site.webmanifest")
     // Styles
-    link(href="./assets/css/styles.css", rel="stylesheet")
-    //- link(href="./assets/css/styles.min.css", rel="stylesheet")
+    //portfolio css
+    link(rel="stylesheet", href="/assets/css/cubeportfolio.min.css")
+
+    link(href="./assets/css/styles.min.css", rel="stylesheet")
   body(class="rtl")
     block layout
     // Scripts
     script(src="../../../node_modules/jquery/dist/jquery.min.js")
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     script(src="../../../node_modules/bootstrap-v4-rtl/dist/js/bootstrap.min.js")
+    //- portfolio
+    script(src="/assets/js/jquery.cubeportfolio.min.js")
     script(src="./assets/js/scripts.min.js")

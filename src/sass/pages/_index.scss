@@ -774,6 +774,9 @@ $slide-custom-width:70%;
     filter: grayscale(0%);
     transition: height 1s 1.4s $ease-cb-2, filter 0.4s 0.1s ease;
     border-radius: 0 50% 0 50%; 
+    @media (min-width: $mq-med){
+      background-size:cover;
+    }
     .is-active &{
       height: 100%;
       opacity: 1;
@@ -792,7 +795,7 @@ $slide-custom-width:70%;
    height: 100vh;
   background-size: cover;
     content: "";
-    background: url(../../../assets/images/06_STILL_LIFE_265_V3_Master_OP2.jpg);
+    background: url(/assets/images/06_STILL_LIFE_265_V3_Master_OP2.jpg);
     opacity: 0.2;
     top: 0;
     left: 0;
@@ -825,6 +828,12 @@ $slide-custom-width:70%;
 }
 }
 }
+//services
+#services{
+ @include customPaddingXY(0px,0,120px,0);
+ [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-size: 60px;}
+}
 .service {
   background: #000;
   text-align: center;
@@ -842,6 +851,124 @@ $slide-custom-width:70%;
 // clients
 
 #clients{
-  @include customPadding(120px);
-  background: #ededed;
+  @include customPadding(90px);
+  // background: #ededed;
+  .bg-image {
+    &::after{
+    height: 100vh;
+   background-size: contain;
+     content: "";
+     background: url(/assets/images/06_STILL_LIFE_265_V3_Master_OP2.jpg);
+     opacity: 0.2;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;   
+     background-position: 50%;
+     border-radius: 50% 0;
+   }
+}
+.clients-container {
+  padding: 50px;
+}
+.clients-title {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  h1{
+    font-size:3rem;
+  }
+}
+}
+
+//services
+
+#services{
+  // @include customPadding(90px);
+
+  .icon-block {
+    color: #000;
+    padding: 60px 20px;
+    box-shadow: 0 3px 15px #4c4c4d26;
+    background-color: #fff;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    .whyicon i {
+      color:$orange-color;
+    }
+}
+}
+
+//portfolio
+#portfolio {
+  @include customPaddingXY(90px,0,60px,0);
+background: #000;
+background-image: url(/assets/images/portfolio_bg.jpg);
+background-attachment: fixed;
+background-size: cover;
+  .cbp-l-filters-text-sort,.cbp-l-filters-text .cbp-filter-item,.cbp-l-loadMore-button .cbp-l-loadMore-link, .cbp-l-loadMore-button .cbp-l-loadMore-button-link
+   {
+     font-family: $font;
+     font-size: 16px;
+  }
+  .cbp-l-loadMore-button .cbp-l-loadMore-link, .cbp-l-loadMore-button .cbp-l-loadMore-button-link {
+    width: 138px;
+    font: inherit;
+    outline: 0;
+    margin-top: 40px;
+    box-shadow: none;
+    -webkit-transition: color .25s;
+    transition: color .25s;
+    border:0;
+    align-items: center;
+    font-weight: bold;
+}
+.cbp-l-grid-agency-desc {
+  font: inherit;
+  color: $orange-color;
+  text-align: center;
+  font-size: 14px;
+}
+.cbp-l-grid-agency-title {
+  margin-top: 18px;
+  font: 700 17px/24px "Tajawal", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+.cbp-l-filters-text-sort{
+  color:#fff;
+}
+.cbp-l-filters-text .cbp-filter-item.cbp-filter-item-active {
+  color: #f0932b;}
+  .cbp-l-filters-text .cbp-filter-item {
+    color: #fbfbfb;}
+}
+
+//contact
+
+#contact-info{
+  @include customPaddingXY(60px,0,60px,0);
+  .contact-info.icon-block {
+
+    padding:0 7%;
+    min-height: 110px;
+}
+span.icon {
+  float: right;
+  margin-left: 20px;
+    min-height: 65px;
+}
+
+.contact-title {
+  margin:0px 0 50px;
+  padding-right: 24px;
+}
 }
