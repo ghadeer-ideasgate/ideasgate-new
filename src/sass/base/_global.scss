@@ -170,5 +170,5 @@ a:hover{
   .inner {
     z-index: 5;
     position: relative;
-    @include customPaddingXY(150px,0,0px,0);
+    @include customPaddingXY(90px,0,0px,0);
 }

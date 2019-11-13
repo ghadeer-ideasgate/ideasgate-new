@@ -1,0 +1,17 @@
+#pagetitles{
+  .slide__title {
+    font-size: 5em;
+  }
+.slides,.slide {
+    height: 75vh;}
+  @media screen and (min-width: 54em){
+     .slide__header {
+    -webkit-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    transform: translateX(25%);
+     }
+}
+}
+.bg-shape {
+    width: 80vw;
+    height: 72vh;}

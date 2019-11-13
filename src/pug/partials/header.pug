@@ -1,4 +1,5 @@
 
+
 //- header#header
 //-   nav.navbar.navbar-expand-lg.navbar-light.fixed-top
 //-       a.navbar-brand(href='#')
@@ -30,20 +31,22 @@ block link
 
 
 header#header
-  nav.navbar.navbar-expand-lg.navbar-light.fixed-top
-      a.navbar-brand(href='#')
-        img(src='assets/images/logo.png' alt='ideasgate logo' height='70')
-      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-        span.navbar-toggler-icon
-      #navbarSupportedContent.collapse.navbar-collapse.overlay
-        ul.navbar-nav.ml-auto.pr-3.overlay-content.cl-effect-15
-          each val, key in menu
-              if selected === key
-                li.nav-item.active
-                  a(href=val, title=key,class="nav-link")= key
-              else
-                li.nav-item
-                  a(href=val, title=key,class="nav-link")= key
-        form.form-inline.my-2.my-lg-0(method='get' action='design-order.html')
-            button#contactForm.btn.my-2.my-sm-0.btn-red(type='submit')
-              | اطلب تصميمك
+  .container
+    .row
+      nav.navbar.navbar-expand-lg.navbar-light.fixed-top
+          a.navbar-brand(href='#')
+            img(src='assets/images/logo.png' alt='ideasgate logo' height='70')
+          button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarSupportedContent.collapse.navbar-collapse.overlay
+            ul.navbar-nav.ml-auto.pr-3.overlay-content.cl-effect-15
+              each val, key in menu
+                  if selected === key
+                    li.nav-item.active
+                      a(href=val, title=key,class="nav-link")= key
+                  else
+                    li.nav-item
+                      a(href=val, title=key,class="nav-link")= key
+            form.form-inline.my-2.my-lg-0(method='get' action='design-order.html')
+                button#contactForm.btn.my-2.my-sm-0.btn-red(type='submit')
+                  | اطلب تصميمك
