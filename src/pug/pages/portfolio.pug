@@ -1,2 +1,76 @@
 extends ../layouts/default-layout.pug
 block content
+    
+    //portfolio section
+    section#portfolio
+        .inner
+            .container
+                .row
+                    .col-lg-12
+                        #js-filters-agency.cbp-l-filters-text
+                            .cbp-l-filters-text-sort ترتيب بواسطة:
+                            .cbp-filter-item-active.cbp-filter-item(data-filter='*')
+                                | الكل
+                                .cbp-filter-counter
+                                |  |
+                                .cbp-filter-item(data-filter='.web-design')
+                                | تصميم مواقع 
+                                .cbp-filter-counter
+                                |  |
+                                .cbp-filter-item(data-filter='.graphic')
+                                | جرافيك
+                                .cbp-filter-counter
+                                |  |
+                                .cbp-filter-item(data-filter='.marketing')
+                                | تسويق إلكترونى 
+                                .cbp-filter-counter
+                        #js-grid-agency.cbp.cbp-l-grid-agency
+                            .cbp-item.graphic.web-design
+                                a(href='#' target='_blank')
+                                    .cbp-caption
+                                        .cbp-caption-defaultWrap
+                                            img(src='data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' data-cbp-src='/assets/images/portfolio/website-1.jpg' alt='' width='380' height='250')
+                                    .cbp-l-grid-agency-title Beyazc
+                                    .cbp-l-grid-agency-desc تصميم مواقع / جرافيك
+                            .cbp-item.web-design.marketing
+                                a(href='#' target='_blank')
+                                    .cbp-caption
+                                        .cbp-caption-defaultWrap
+                                            img(src='data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' data-cbp-src='http://scriptpie.com/cubeportfolio/img/?i=380x250/b611ec' alt='' width='380' height='250')
+                                    .cbp-l-grid-agency-title World Clock Widget
+                                    .cbp-l-grid-agency-desc تسويق إلكترونى / تصميم مواقع
+                            .cbp-item.graphic.marketing
+                                a(href='#' target='_blank')
+                                    .cbp-caption
+                                        .cbp-caption-defaultWrap
+                                            img(src='data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' data-cbp-src='http://scriptpie.com/cubeportfolio/img/?i=380x250/494bfe' alt='' width='380' height='250')
+                                    .cbp-l-grid-agency-title To-Do Dashboard
+                                    .cbp-l-grid-agency-desc جرافيك / تسويق إلكترونى
+                            .cbp-item.web-design.graphic
+                                a(href='#' target='_blank')
+                                    .cbp-caption
+                                        .cbp-caption-defaultWrap
+                                            img(src='data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' data-cbp-src='http://scriptpie.com/cubeportfolio/img/?i=380x250/35fadd' alt='' width='380' height='250')
+                                    .cbp-l-grid-agency-title Events and More
+                                    .cbp-l-grid-agency-desc تصميم مواقع / جرافيك
+                            .cbp-item.graphic.marketing
+                                a(href='#' target='_blank')
+                                    .cbp-caption
+                                        .cbp-caption-defaultWrap
+                                            img(src='data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' data-cbp-src='http://scriptpie.com/cubeportfolio/img/?i=380x250/b08497' alt='' width='380' height='250')
+                                    .cbp-l-grid-agency-title Seemple* Music for iPad
+                                    .cbp-l-grid-agency-desc جرافيك / تسويق إلكترونى
+                            .cbp-item.graphic
+                                a(href='#' target='_blank')
+                                    .cbp-caption
+                                        .cbp-caption-defaultWrap
+                                            img(src='data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' data-cbp-src='http://scriptpie.com/cubeportfolio/img/?i=380x250/0cf7a7' alt='' width='380' height='250')
+                                    .cbp-l-grid-agency-title Remind~Me More
+                                    .cbp-l-grid-agency-desc   جرافيك
+                                
+                        
+                        #js-loadMore-agency.cbp-l-loadMore-button
+                            a.cbp-l-loadMore-link(href='#' rel='nofollow')
+                            span.cbp-l-loadMore-defaultText.btn-orange عرض المزيد
+                            span.cbp-l-loadMore-loadingText جار التحميل...
+                            span.cbp-l-loadMore-noMoreLoading لا يوجد اعمال أخرى

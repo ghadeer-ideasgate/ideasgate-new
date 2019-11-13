@@ -155,3 +155,20 @@ a:hover{
     color: #000;
     border-radius: 0 !important;
   }
+// bg shape
+  .bg-shape {
+    width: 80vw;
+    height: 96vh;
+    background: $orange-color;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    border-radius: 0% 43%;
+  }
+//inner pages div
+  .inner {
+    z-index: 5;
+    position: relative;
+    @include customPaddingXY(150px,0,0px,0);
+}

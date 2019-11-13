@@ -1,2 +1,61 @@
 extends ../layouts/default-layout.pug
 block content
+    section#contactuscontainer
+        .inner
+            .container
+                .row
+                    .col-lg-6
+                        #contact-info
+                            .row
+                                .col-md-6
+                                    .contact-info.icon-block
+                                    .contact-title
+                                        h1 تواصل
+                                        span(style="color:#f0932b;padding-right:5px;")  معنا
+                                .col-md-6
+                                    .contact-info.icon-block
+                                    span.icon
+                                        i.flaticon-location
+                                    h5 العنوان
+                                    p لوران الإسكندرية - 711 ش الحرية
+                                .col-md-6
+                                    .contact-info.icon-block
+                                    span.icon
+                                        i.flaticon-email
+                                    h5 البريد الإلكترونى
+                                    p(style="font-size:17px;") info@ideasgate.com
+                                .col-md-6
+                                    .contact-info.icon-block
+                                    span.icon
+                                        i.flaticon-phone(aria-hidden='true')
+                                    h5 تليفون
+                                        p(style='direction:ltr')
+                                            | (+20) 155 016 4774 - <br> (03) 5702005 - (03) 5703003 
+                    .col-lg-6
+                        .contactform
+                            .col-md-12.contact-team
+                                .contactTitles
+                                    h3.text-center تواصل معنا
+                                    h6.text-center
+                                    | يسعدنا الرد على جميع استفساراتكم
+                                .contact-send-message.subscribe-form
+                                    form.contact-form.row
+                                        .col-sm-12.col-xs-12
+                                            input.form-control(type='text' placeholder='الأسم*')
+                                        .col-sm-12.col-xs-12
+                                            input.form-control(type='email' placeholder='البريد الإلكترونى*')
+                                        .col-sm-12.col-xs-12
+                                            input.form-control(type='text' placeholder='الموضوع*')
+                                        .col-sm-12.col-xs-12
+                                            input.form-control(type='text' placeholder='موبايل*')
+                                        .col-sm-12.col-xs-12
+                                            textarea.form-control(placeholder='الرسالة*')
+                                        .col-sm-12.col-xs-12.text-center
+                                            button.btn.btn-subscribe.bg-color-1(type='submit') &#x627;&#x631;&#x633;&#x627;&#x644;
+
+            .container-fluid            
+                .row                                                      
+                    .col-lg-12
+                        #mapinner
+                            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d852.7699058785577!2d29.9753506291858!3d31.24621904541377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5dacd1b51ba33%3A0x5bc38ee1ddb44c5c!2z2YXYtdix2YEg2KPYqNmIINi42KjZiiDYp9mE2KXYs9mE2KfZhdmKIEFESUI!5e0!3m2!1sen!2seg!4v1571223944314!5m2!1sen!2seg' height='400' width='100%' frameborder='0' style='border:0;' allowfullscreen='')
+                

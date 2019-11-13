@@ -1,8 +1,9 @@
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 footer{
-    // position: relative;
     @include customPaddingXY(60px,0,0,0);
     background: #0b0e19;
+    z-index: 10;
+    position: relative;
 }
 .footer-top{
     width:100%;

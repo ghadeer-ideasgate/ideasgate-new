@@ -12443,6 +12443,23 @@ a:hover {
   border-radius: 0 !important;
 }
 
+.bg-shape {
+  width: 80vw;
+  height: 96vh;
+  background: #f0932b;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  border-radius: 0% 43%;
+}
+
+.inner {
+  z-index: 5;
+  position: relative;
+  padding: 150px 0 0px 0;
+}
+
 #header {
   position: relative;
 }
@@ -12494,6 +12511,8 @@ a:hover {
 footer {
   padding: 60px 0 0 0;
   background: #0b0e19;
+  z-index: 10;
+  position: relative;
 }
 
 .footer-top {
@@ -12982,17 +13001,6 @@ footer {
   100% {
     -webkit-transform: rotate(1080deg);
   }
-}
-
-.bg-shape {
-  width: 80vw;
-  height: 96vh;
-  background: #f0932b;
-  position: absolute;
-  z-index: 3;
-  left: 0;
-  top: 0;
-  border-radius: 0% 43%;
 }
 
 body {
@@ -13498,9 +13506,8 @@ body {
   padding-right: 24px;
 }
 
-.inner {
-  z-index: 5;
-  position: relative;
+#mapinner {
+  padding: 120px 0 0px 0;
 }
 
 @media screen and (max-width: 768px) {
