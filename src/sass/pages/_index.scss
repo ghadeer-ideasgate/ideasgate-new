@@ -895,7 +895,7 @@ $slide-custom-width:70%;
 }
 
 //portfolio
-#portfolio {
+#portfolio,#portfolio-inner {
   @include customPaddingXY(90px,0,60px,0);
 background: #000;
 background-image: url(/assets/images/portfolio_bg.jpg);

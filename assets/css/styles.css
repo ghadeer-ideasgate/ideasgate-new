@@ -13451,7 +13451,7 @@ body {
   color: #f0932b;
 }
 
-#portfolio {
+#portfolio, #portfolio-inner {
   padding: 90px 0 60px 0;
   background: #000;
   background-image: url(/assets/images/portfolio_bg.jpg);
@@ -13459,12 +13459,12 @@ body {
   background-size: cover;
 }
 
-#portfolio .cbp-l-filters-text-sort, #portfolio .cbp-l-filters-text .cbp-filter-item, #portfolio .cbp-l-loadMore-button .cbp-l-loadMore-link, #portfolio .cbp-l-loadMore-button .cbp-l-loadMore-button-link {
+#portfolio .cbp-l-filters-text-sort, #portfolio .cbp-l-filters-text .cbp-filter-item, #portfolio .cbp-l-loadMore-button .cbp-l-loadMore-link, #portfolio .cbp-l-loadMore-button .cbp-l-loadMore-button-link, #portfolio-inner .cbp-l-filters-text-sort, #portfolio-inner .cbp-l-filters-text .cbp-filter-item, #portfolio-inner .cbp-l-loadMore-button .cbp-l-loadMore-link, #portfolio-inner .cbp-l-loadMore-button .cbp-l-loadMore-button-link {
   font-family: "Tajawal", sans-serif;
   font-size: 16px;
 }
 
-#portfolio .cbp-l-loadMore-button .cbp-l-loadMore-link, #portfolio .cbp-l-loadMore-button .cbp-l-loadMore-button-link {
+#portfolio .cbp-l-loadMore-button .cbp-l-loadMore-link, #portfolio .cbp-l-loadMore-button .cbp-l-loadMore-button-link, #portfolio-inner .cbp-l-loadMore-button .cbp-l-loadMore-link, #portfolio-inner .cbp-l-loadMore-button .cbp-l-loadMore-button-link {
   width: 138px;
   font: inherit;
   outline: 0;
@@ -13481,29 +13481,29 @@ body {
   font-weight: bold;
 }
 
-#portfolio .cbp-l-grid-agency-desc {
+#portfolio .cbp-l-grid-agency-desc, #portfolio-inner .cbp-l-grid-agency-desc {
   font: inherit;
   color: #f0932b;
   text-align: center;
   font-size: 14px;
 }
 
-#portfolio .cbp-l-grid-agency-title {
+#portfolio .cbp-l-grid-agency-title, #portfolio-inner .cbp-l-grid-agency-title {
   margin-top: 18px;
   font: 700 17px/24px "Tajawal", sans-serif;
   color: #fff;
   text-align: center;
 }
 
-#portfolio .cbp-l-filters-text-sort {
+#portfolio .cbp-l-filters-text-sort, #portfolio-inner .cbp-l-filters-text-sort {
   color: #fff;
 }
 
-#portfolio .cbp-l-filters-text .cbp-filter-item.cbp-filter-item-active {
+#portfolio .cbp-l-filters-text .cbp-filter-item.cbp-filter-item-active, #portfolio-inner .cbp-l-filters-text .cbp-filter-item.cbp-filter-item-active {
   color: #f0932b;
 }
 
-#portfolio .cbp-l-filters-text .cbp-filter-item {
+#portfolio .cbp-l-filters-text .cbp-filter-item, #portfolio-inner .cbp-l-filters-text .cbp-filter-item {
   color: #fbfbfb;
 }
 
@@ -13548,6 +13548,19 @@ body {
 
 #contactuscontainer textarea.form-control {
   height: 150px;
+}
+
+.inner #portfolio {
+  background: transparent;
+  padding-top: 0;
+}
+
+.inner #portfolio .cbp-l-filters-text .cbp-filter-item, .inner #portfolio-inner .cbp-l-filters-text .cbp-filter-item {
+  color: #0b0e19;
+}
+
+.inner #portfolio .cbp-l-filters-text .cbp-filter-item.cbp-filter-item-active, .inner #portfolio-inner .cbp-l-filters-text .cbp-filter-item.cbp-filter-item-active {
+  color: #f0932b;
 }
 
 @media screen and (max-width: 768px) {
