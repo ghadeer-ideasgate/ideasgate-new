@@ -1,3 +1,20 @@
-#mapinner{
+#contactuscontainer{
+.contact-team{
     @include customPaddingXY(120px,0,0px,0);
+}
+.input-group {
+    width: 48%;
+    float: right;
+    margin-left: 15px;
+}
+#p,#e {
+    margin-left: 0!important;
+    margin-right:15px!important;
+}
+input.form-control,textarea {
+    min-height:calc(1.5em + 0.75rem + 10px);;
+}
+textarea.form-control {
+    height: 150px;
+}
 }

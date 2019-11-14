@@ -6,12 +6,12 @@
     height: 75vh;}
   @media screen and (min-width: 54em){
      .slide__header {
-    -webkit-transform: translateX(25%);
-    -ms-transform: translateX(25%);
-    transform: translateX(25%);
+    -webkit-transform: translateX(15%);
+    -ms-transform: translateX(15%);
+    transform: translateX(15%);
      }
 }
 }
-.bg-shape {
+.bg-shape-inner  {
     width: 80vw;
     height: 72vh;}

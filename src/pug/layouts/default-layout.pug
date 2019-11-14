@@ -14,8 +14,6 @@ block layout
             fegaussianblur(in='SourceGraphic' result='blur' stddeviation='12')
             fecolormatrix(in='blur' mode='matrix' values='1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7' result='goo')
             // <feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>
-
-    .bg-shape
     include ../partials/header.pug
     block content
     include ../partials/footer.pug
