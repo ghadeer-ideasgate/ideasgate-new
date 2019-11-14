@@ -13286,7 +13286,7 @@ body {
   display: block;
   background-size: contain;
   background-attachment: fixed;
-  background-position: 50%;
+  background-position: 37% 49%;
   -webkit-backface-visibility: hidden;
   height: 0%;
   width: 100%;
@@ -13527,12 +13527,52 @@ body {
   padding-right: 24px;
 }
 
-#contactuscontainer .contact-team {
+#about .aboutbg-image img {
+  border-radius: 50% 0;
+  opacity: 0.4;
+}
+
+#about .aboutbg-image::after {
+  height: 100vh;
+  content: "";
+  background: url(/assets/images/sara-kurfess-x-a0mbWUWVI-unsplash.jpg) no-repeat;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-position: 50%;
+  border-radius: 50% 0;
+  background-size: cover;
+}
+
+#about .whyuscontainer {
+  padding: 120px 0 60px 0;
+}
+
+#about .whyus {
+  /* height: 114%; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 109px;
+}
+
+#contactuscontainer #mapinner {
   padding: 120px 0 0px 0;
 }
 
 #contactuscontainer .input-group {
-  width: 48%;
+  width: 47%;
   float: right;
   margin-left: 15px;
 }
@@ -13548,19 +13588,80 @@ body {
 
 #contactuscontainer textarea.form-control {
   height: 150px;
+  width: 98%;
 }
 
-.inner #portfolio {
-  background: transparent;
-  padding-top: 0;
+#contactuscontainer .bg-image::after {
+  height: 100vh;
+  content: "";
+  background: url(/assets/images/sara-kurfess-x-a0mbWUWVI-unsplash.jpg) no-repeat;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-position: 50%;
+  border-radius: 50% 0;
+  background-size: cover;
 }
 
-.inner #portfolio .cbp-l-filters-text .cbp-filter-item, .inner #portfolio-inner .cbp-l-filters-text .cbp-filter-item {
-  color: #0b0e19;
+#contactuscontainer #map {
+  padding: 120px 0 0px 0;
 }
 
-.inner #portfolio .cbp-l-filters-text .cbp-filter-item.cbp-filter-item-active, .inner #portfolio-inner .cbp-l-filters-text .cbp-filter-item.cbp-filter-item-active {
-  color: #f0932b;
+#services-inner .bg-image::after {
+  height: 100vh;
+  content: "";
+  background: url(/assets/images/542.jpg);
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-position: 50%;
+  border-radius: 50% 0;
+  background-size: cover;
+}
+
+#designInner,
+#marketingInner {
+  padding: 150px 0;
+}
+
+#designInner .bg-image::after {
+  height: 100vh;
+  content: "";
+  background: url(/assets/images/slider/pencil-typography-black-design.jpg);
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-position: 50%;
+  border-radius: 50% 0;
+  background-size: cover;
+}
+
+#marketingInner .bg-image::after {
+  height: 100vh;
+  content: "";
+  background: url(/assets/images/slider/23053.jpg);
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-position: 50%;
+  border-radius: 50% 0;
+  background-size: cover;
 }
 
 @media screen and (max-width: 768px) {

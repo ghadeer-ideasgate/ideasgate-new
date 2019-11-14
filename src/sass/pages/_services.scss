@@ -1,0 +1,62 @@
+#services-inner {
+  .bg-image {
+    &::after {
+    height: 100vh;
+    content: "";
+    background: url(/assets/images/542.jpg);
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-position: 50%;
+    border-radius: 50% 0;
+    background-size: cover;
+    }
+  }
+ 
+}
+#designInner,
+#marketingInner {
+  @include customPadding(150px);
+}
+#designInner {
+  .bg-image {
+    &::after {
+      height: 100vh;
+      content: "";
+      background: url(/assets/images/slider/pencil-typography-black-design.jpg);
+      opacity: 0.4;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+      background-position: 50%;
+      border-radius: 50% 0;
+      background-size: cover;
+    }
+  }
+}
+#marketingInner{
+    .bg-image {
+        &::after {
+          height: 100vh;
+          content: "";
+          background: url(/assets/images/slider/23053.jpg);
+          opacity: 0.4;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          position: absolute;
+          z-index: -1;
+          background-position: 50%;
+          border-radius: 50% 0;
+          background-size: cover;
+        }
+      }
+}

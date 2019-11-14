@@ -1,9 +1,9 @@
 #contactuscontainer{
-.contact-team{
+#mapinner{
     @include customPaddingXY(120px,0,0px,0);
 }
 .input-group {
-    width: 48%;
+    width: 47%;
     float: right;
     margin-left: 15px;
 }
@@ -16,5 +16,24 @@ input.form-control,textarea {
 }
 textarea.form-control {
     height: 150px;
+    width: 98%;
+}
+.bg-image::after {
+    height: 100vh;
+    content: "";
+    background: url(/assets/images/sara-kurfess-x-a0mbWUWVI-unsplash.jpg) no-repeat;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-position: 50%;
+    border-radius: 50% 0;
+    background-size:cover;
+}  
+#map{
+    @include customPaddingXY(120px,0,0px,0);
 }
 }
