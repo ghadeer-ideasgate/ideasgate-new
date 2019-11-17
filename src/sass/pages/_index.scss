@@ -705,7 +705,7 @@ $slide-custom-width:70%;
     overflow-y: hidden;
     
     @media (min-width: $mq-med){
-      font-size: 4em;
+      font-size: 3.5em;
     }
      
     // Slice text animation
@@ -756,8 +756,7 @@ $slide-custom-width:70%;
     // background-size: cover;
     background-size:contain;
     background-attachment: fixed;
-    // background-position: 50%;
-    background-position: 37% 49%;
+    background-position: 2% 50%;
      -webkit-backface-visibility: hidden;
      //will-change:height;
     height: 0%;
@@ -783,7 +782,7 @@ $slide-custom-width:70%;
    height: 100vh;
   background-size: cover;
     content: "";
-    background: url(/assets/images/06_STILL_LIFE_265_V3_Master_OP2.jpg);
+    background: url(/assets/images/junior-ferreira-7esRPTt38nI-unsplash.jpg);
     opacity: 0.2;
     top: 0;
     left: 0;
@@ -907,18 +906,18 @@ background-size: cover;
      font-family: $font;
      font-size: 16px;
   }
-  .cbp-l-loadMore-button .cbp-l-loadMore-link, .cbp-l-loadMore-button .cbp-l-loadMore-button-link {
-    width: 138px;
-    font: inherit;
-    outline: 0;
-    margin-top: 40px;
-    box-shadow: none;
-    -webkit-transition: color .25s;
-    transition: color .25s;
-    border:0;
-    align-items: center;
-    font-weight: bold;
-}
+//   .cbp-l-loadMore-button .cbp-l-loadMore-link, .cbp-l-loadMore-button .cbp-l-loadMore-button-link {
+//     width: 138px;
+//     font: inherit;
+//     outline: 0;
+//     margin-top: 40px;
+//     box-shadow: none;
+//     -webkit-transition: color .25s;
+//     transition: color .25s;
+//     border:0;
+//     align-items: center;
+//     font-weight: bold;
+// }
 .cbp-l-grid-agency-desc {
   font: inherit;
   color: $orange-color;

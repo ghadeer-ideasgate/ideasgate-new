@@ -4,11 +4,26 @@
         border-radius: 50% 0;
         opacity: 0.4;
     }
+    .aboutbg1-image::after {
+        height: 100vh;
+        content: "";
+        background: url(/assets/images/junior-ferreira-7esRPTt38nI-unsplash.jpg) no-repeat;
+        opacity: 0.4;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        background-position: 50%;
+        border-radius: 50% 0;
+        background-size: cover;
+    }  
     .aboutbg-image::after {
         height: 100vh;
         content: "";
-        background: url(/assets/images/sara-kurfess-x-a0mbWUWVI-unsplash.jpg) no-repeat;
-        opacity: 0.2;
+        background: url(/assets/images/slide-3.jpg) no-repeat;
+        opacity: 0.5;
         top: 0;
         left: 0;
         bottom: 0;

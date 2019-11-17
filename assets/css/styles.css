@@ -12443,6 +12443,68 @@ a:hover {
   border-radius: 0 !important;
 }
 
+.btn11 {
+  top: 20px;
+  border-radius: 0px;
+  position: relative;
+  overflow: hidden !important;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: transparent;
+}
+
+.btn11:hover {
+  border: 1px solid transparent;
+  color: #000 !important;
+}
+
+.btn11::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #f0932b;
+  position: absolute;
+  left: 0%;
+  opacity: 1;
+  top: 0;
+  z-index: -12;
+  -webkit-transition: all 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.btn11::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #000;
+  position: absolute;
+  left: 0%;
+  opacity: 1;
+  top: 0;
+  z-index: -15;
+  -webkit-transition: all 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.btn11:hover::before, .btn11:hover::before {
+  opacity: 1;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.btn11:hover::after, .btn11:hover::after {
+  opacity: 1;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
 .bg-shape, .bg-shape-inner {
   width: 80vw;
   height: 96vh;
@@ -12498,14 +12560,14 @@ a:hover {
   opacity: 0;
 }
 
-#contactForm {
-  border: 1px solid #111111;
-  border-radius: 0;
+#contactForm.btn11 {
+  top: 0;
+  min-width: 140px !important;
 }
 
-#contactForm:hover {
-  border: 1px solid #fff;
-  color: #fff;
+#contactForm.btn11 ::before {
+  background: #101010 !important;
+  color: #fff !important;
 }
 
 footer {
@@ -12722,6 +12784,10 @@ footer {
 
 .footer-bottom .copyright p span {
   color: #f0932b;
+}
+
+.btn.btn-subscribe.text-center.btn-orange.btn11:hover {
+  color: #fff !important;
 }
 
 #pagetitles .slide__title {
@@ -13205,7 +13271,7 @@ body {
 
 @media (min-width: 54em) {
   .slide__title {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 }
 
@@ -13286,7 +13352,7 @@ body {
   display: block;
   background-size: contain;
   background-attachment: fixed;
-  background-position: 37% 49%;
+  background-position: 2% 50%;
   -webkit-backface-visibility: hidden;
   height: 0%;
   width: 100%;
@@ -13323,7 +13389,7 @@ body {
   height: 100vh;
   background-size: cover;
   content: "";
-  background: url(/assets/images/06_STILL_LIFE_265_V3_Master_OP2.jpg);
+  background: url(/assets/images/junior-ferreira-7esRPTt38nI-unsplash.jpg);
   opacity: 0.2;
   top: 0;
   left: 0;
@@ -13464,23 +13530,6 @@ body {
   font-size: 16px;
 }
 
-#portfolio .cbp-l-loadMore-button .cbp-l-loadMore-link, #portfolio .cbp-l-loadMore-button .cbp-l-loadMore-button-link, #portfolio-inner .cbp-l-loadMore-button .cbp-l-loadMore-link, #portfolio-inner .cbp-l-loadMore-button .cbp-l-loadMore-button-link {
-  width: 138px;
-  font: inherit;
-  outline: 0;
-  margin-top: 40px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: color .25s;
-  -o-transition: color .25s;
-  transition: color .25s;
-  border: 0;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-weight: bold;
-}
-
 #portfolio .cbp-l-grid-agency-desc, #portfolio-inner .cbp-l-grid-agency-desc {
   font: inherit;
   color: #f0932b;
@@ -13532,11 +13581,27 @@ body {
   opacity: 0.4;
 }
 
+#about .aboutbg1-image::after {
+  height: 100vh;
+  content: "";
+  background: url(/assets/images/junior-ferreira-7esRPTt38nI-unsplash.jpg) no-repeat;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-position: 50%;
+  border-radius: 50% 0;
+  background-size: cover;
+}
+
 #about .aboutbg-image::after {
   height: 100vh;
   content: "";
-  background: url(/assets/images/sara-kurfess-x-a0mbWUWVI-unsplash.jpg) no-repeat;
-  opacity: 0.2;
+  background: url(/assets/images/slide-3.jpg) no-repeat;
+  opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;
@@ -13568,7 +13633,7 @@ body {
 }
 
 #contactuscontainer #mapinner {
-  padding: 120px 0 0px 0;
+  padding: 60px 0 0px 0;
 }
 
 #contactuscontainer .input-group {
@@ -13588,14 +13653,14 @@ body {
 
 #contactuscontainer textarea.form-control {
   height: 150px;
-  width: 98%;
+  width: 99%;
 }
 
 #contactuscontainer .bg-image::after {
   height: 100vh;
   content: "";
-  background: url(/assets/images/sara-kurfess-x-a0mbWUWVI-unsplash.jpg) no-repeat;
-  opacity: 0.1;
+  background: url(/assets/images/pexels-photo-934071.jpeg) no-repeat;
+  opacity: 0.3;
   top: 0;
   left: 0;
   bottom: 0;
@@ -13607,15 +13672,15 @@ body {
   background-size: cover;
 }
 
-#contactuscontainer #map {
-  padding: 120px 0 0px 0;
+#services-inner {
+  padding: 60px 0 120px 0;
 }
 
 #services-inner .bg-image::after {
   height: 100vh;
   content: "";
   background: url(/assets/images/542.jpg);
-  opacity: 0.4;
+  opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;
@@ -13627,16 +13692,15 @@ body {
   background-size: cover;
 }
 
-#designInner,
-#marketingInner {
-  padding: 150px 0;
+#designInner {
+  padding: 120px 0 120px 0;
 }
 
 #designInner .bg-image::after {
   height: 100vh;
   content: "";
-  background: url(/assets/images/slider/pencil-typography-black-design.jpg);
-  opacity: 0.4;
+  background: url(/assets/images/design-service.jpg);
+  opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;
@@ -13648,11 +13712,15 @@ body {
   background-size: cover;
 }
 
+#marketingInner {
+  padding: 0px 0 90px 0;
+}
+
 #marketingInner .bg-image::after {
   height: 100vh;
   content: "";
-  background: url(/assets/images/slider/23053.jpg);
-  opacity: 0.4;
+  background: url(/assets/images/marketing.jpg);
+  opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;
@@ -13662,6 +13730,10 @@ body {
   background-position: 50%;
   border-radius: 50% 0;
   background-size: cover;
+}
+
+.graphicsub h6 {
+  font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {

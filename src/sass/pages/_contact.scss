@@ -1,6 +1,6 @@
 #contactuscontainer{
 #mapinner{
-    @include customPaddingXY(120px,0,0px,0);
+    @include customPaddingXY(60px,0,0px,0);
 }
 .input-group {
     width: 47%;
@@ -16,13 +16,13 @@ input.form-control,textarea {
 }
 textarea.form-control {
     height: 150px;
-    width: 98%;
+    width: 99%;
 }
 .bg-image::after {
     height: 100vh;
     content: "";
-    background: url(/assets/images/sara-kurfess-x-a0mbWUWVI-unsplash.jpg) no-repeat;
-    opacity: 0.1;
+    background: url(/assets/images/pexels-photo-934071.jpeg) no-repeat;
+    opacity: 0.3;
     top: 0;
     left: 0;
     bottom: 0;
@@ -33,7 +33,7 @@ textarea.form-control {
     border-radius: 50% 0;
     background-size:cover;
 }  
-#map{
-    @include customPaddingXY(120px,0,0px,0);
-}
+// #map{
+//     @include customPaddingXY(30px,0,0px,0);
+// }
 }

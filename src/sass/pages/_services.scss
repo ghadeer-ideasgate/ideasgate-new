@@ -1,10 +1,11 @@
 #services-inner {
+  @include customPaddingXY(60px,0,120px,0);
   .bg-image {
     &::after {
     height: 100vh;
     content: "";
     background: url(/assets/images/542.jpg);
-    opacity: 0.4;
+    opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
@@ -18,17 +19,17 @@
   }
  
 }
-#designInner,
-#marketingInner {
-  @include customPadding(150px);
+#designInner
+ {
+  @include customPaddingXY(120px,0,120px,0);
 }
 #designInner {
   .bg-image {
     &::after {
       height: 100vh;
       content: "";
-      background: url(/assets/images/slider/pencil-typography-black-design.jpg);
-      opacity: 0.4;
+      background: url(/assets/images/design-service.jpg);
+      opacity: 0.5;
       top: 0;
       left: 0;
       bottom: 0;
@@ -42,12 +43,13 @@
   }
 }
 #marketingInner{
+  @include customPaddingXY(0px,0,90px,0);
     .bg-image {
         &::after {
           height: 100vh;
           content: "";
-          background: url(/assets/images/slider/23053.jpg);
-          opacity: 0.4;
+          background: url(/assets/images/marketing.jpg);
+          opacity: 0.5;
           top: 0;
           left: 0;
           bottom: 0;
@@ -59,4 +61,9 @@
           background-size: cover;
         }
       }
+}
+.graphicsub{
+  h6{
+    font-weight: 600;
+  }
 }

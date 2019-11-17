@@ -38,10 +38,13 @@
         opacity: 0;
     }
     #contactForm {
-        border: 1px solid #111111;
-        border-radius: 0;
-        &:hover{
-            border: 1px solid #fff;
-            color:#fff;
+        &.btn11{
+        top: 0;
+        min-width: 140px!important;
+         ::before{
+                  
+                    background: #101010!important;
+                    color:#fff!important;
+}
         }
     }
